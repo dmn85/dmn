@@ -11,12 +11,14 @@ on:
 jobs:
   my_test:
    runs-on: ubuntu-latest
-   steps:
+   
+    steps:
     -name: print
     run: echo "basic"
   
   my_deploy:
    runs-on: ubuntu-latest
-    steps:
+   
+   steps:
     -name: print
     run: echo "end"
