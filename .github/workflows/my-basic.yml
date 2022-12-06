@@ -4,8 +4,6 @@
 
 name: my-basic
 
-name: Greeting from DmN
-
 on: push
 
 jobs:
