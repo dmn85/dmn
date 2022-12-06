@@ -1,0 +1,22 @@
+#------------------------------------
+# Github action part -1- basic
+#copyleft DmN
+
+name: my-basic
+
+on:
+  push:
+    branches:
+       -master
+jobs:
+  my_test:
+   runs-on: ubuntu-latest
+   steps:
+    -name: shell
+     run: sh
+  
+  my_deploy:
+   runs-on: ubuntu-latest
+   steps:
+    -name: shell
+     run: shell
