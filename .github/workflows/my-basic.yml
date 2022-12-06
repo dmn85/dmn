@@ -13,7 +13,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     -name: shell
-     run: sh
+     run: shell
   
   my_deploy:
    runs-on: ubuntu-latest
