@@ -1,0 +1,33 @@
+#------------------------------
+name: My-GitHubActions-Basics
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello Message in Testing
+      run : echo "Hello World from Testing job"
+    
+      
+    - name: List current folder
+      run : ls -la
+   
+    - name: Git clone my repo
+      uses: actions/checkout@v1   
+  
+    - name: List current folder
+      run : ls -la
+  
+  my_deploy:
+    runs-on: ubuntu-latest
+    needs: [my_testing]
+       
+    steps:
+    - name: Print Hello Message in Deploy
+      run : echo "Hello World from Deploy job"
